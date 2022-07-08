@@ -4,7 +4,7 @@ import Heading from 'common/components/Heading';
 import NextImage from 'common/components/NextImage';
 import Box from 'common/components/Box';
 import ClientsWrapper from './clients.style';
-import { CLIENTS_DATA } from 'common/data/FoodDelivery';
+// import { CLIENTS_DATA } from 'common/data/FoodDelivery';
 const Clients = () => {
   const { title, images } = CLIENTS_DATA;
   return (
