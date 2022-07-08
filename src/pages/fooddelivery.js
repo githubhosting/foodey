@@ -18,7 +18,7 @@ import PopularCategory from "../containers/FoodDelivery/PopularCategory";
 import HowWorks from "../containers/FoodDelivery/HowWorks";
 import ProductDelivery from "../containers/FoodDelivery/ProductDelivery";
 import QualityFeatures from "../containers/FoodDelivery/QualityFeatures";
-import Clients from "../containers/FoodDelivery/Clients";
+// import Clients from "../containers/FoodDelivery/Clients";
 import DownloadApp from "../containers/FoodDelivery/DownloadApp";
 import Gallery from "../containers/FoodDelivery/Gallery";
 import CallToAction from "../containers/FoodDelivery/CallToAction";
@@ -56,7 +56,7 @@ const FoodDelivery = () => {
           <HowWorks />
           <ProductDelivery />
           <QualityFeatures />
-          <Clients />
+          {/* <Clients /> */}
           <Testimonials />
           <DownloadApp />
           <Gallery />
