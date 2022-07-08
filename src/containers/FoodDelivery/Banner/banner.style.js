@@ -263,6 +263,10 @@ const BannerWrapper = styled.section`
       @media (max-width: 414px) {
         margin-left: 10px;
       }
+      @media (max-width: 320px) {
+        margin-left: 0px;
+        margin-top: 10px;
+      }
     }
     img {
       flex-shrink: 0;

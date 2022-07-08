@@ -101,35 +101,7 @@ export const DOWNLOAD_APP_DATA = {
   ],
 };
 
-import client1 from 'common/assets/image/foodDelivery/client-1.png';
-import client2 from 'common/assets/image/foodDelivery/client-2.png';
-import client3 from 'common/assets/image/foodDelivery/client-3.png';
-import client4 from 'common/assets/image/foodDelivery/client-4.png';
-import client5 from 'common/assets/image/foodDelivery/client-5.png';
-import client6 from 'common/assets/image/foodDelivery/client-6.png';
-export const CLIENTS_DATA = {
-  title: '210,000+ people already use our app on a daily basis',
-  images: [
-    {
-      path: client1,
-    },
-    {
-      path: client2,
-    },
-    {
-      path: client3,
-    },
-    {
-      path: client4,
-    },
-    {
-      path: client5,
-    },
-    {
-      path: client6,
-    },
-  ],
-};
+
 
 import deliveryProductImage from 'common/assets/image/foodDelivery/deliver-products.png';
 export const DELIVERY_PRODUCT_DATA = {
@@ -378,11 +350,11 @@ export const MENU_ITEMS = [
     path: '#features',
     offset: '70',
   },
-  {
-    label: 'Testimonials',
-    path: '#testimonials',
-    offset: '70',
-  },
+  // {
+  //   label: 'Testimonials',
+  //   path: '#testimonials',
+  //   offset: '70',
+  // },
   {
     label: 'Download',
     path: '#download',

@@ -1,66 +1,70 @@
-import React, { Fragment } from 'react';
-import Head from 'next/head';
-import Sticky from 'react-stickynode';
-import { ThemeProvider } from 'styled-components';
-import { agencyTheme } from 'common/theme/agency';
-import ResetCSS from 'common/assets/css/style';
-import { GlobalStyle, AgencyWrapper } from 'containers/Agency/agency.style';
-import Navbar from 'containers/Agency/Navbar';
-import BannerSection from 'containers/Agency/BannerSection';
-import FeatureSection from 'containers/Agency/FeatureSection';
-import AboutUsSection from 'containers/Agency/AboutUsSection';
-import WorkHistory from 'containers/Agency/WorkHistory';
-import BlogSection from 'containers/Agency/BlogSection';
-import TestimonialSection from 'containers/Agency/TestimonialSection';
-import TeamSection from 'containers/Agency/TeamSection';
-import VideoSection from 'containers/Agency/VideoSection';
-import NewsletterSection from 'containers/Agency/NewsletterSection';
-import QualitySection from 'containers/Agency/QualitySection';
-import Footer from 'containers/Agency/Footer';
-import { DrawerProvider } from 'common/contexts/DrawerContext';
-import FaqSection from 'containers/Agency/FaqSection';
+import React, { Fragment } from "react";
+import Head from "next/head";
+import { ThemeProvider } from "styled-components";
+import { DrawerProvider } from "common/contexts/DrawerContext";
+import Sticky from "react-stickynode";
+import { foodDeliveryTheme } from "common/theme/foodDelivery";
+import ResetCSS from "common/assets/css/style";
+import {
+  GlobalStyle,
+  ContentWrapper,
+} from "../containers/FoodDelivery/foodDelivery.style";
 
-const Main = () => {
+import Navbar from "../containers/FoodDelivery/Navbar";
+import Testimonials from "../containers/FoodDelivery/Testimonials";
+import Banner from "../containers/FoodDelivery/Banner";
+import AvailableRestaurants from "../containers/FoodDelivery/AvailableRestaurants";
+import PopularCategory from "../containers/FoodDelivery/PopularCategory";
+import HowWorks from "../containers/FoodDelivery/HowWorks";
+import ProductDelivery from "../containers/FoodDelivery/ProductDelivery";
+import QualityFeatures from "../containers/FoodDelivery/QualityFeatures";
+import Clients from "../containers/FoodDelivery/Clients";
+import DownloadApp from "../containers/FoodDelivery/DownloadApp";
+import Gallery from "../containers/FoodDelivery/Gallery";
+import CallToAction from "../containers/FoodDelivery/CallToAction";
+import Footer from "../containers/FoodDelivery/Footer";
+
+const FoodDelivery = () => {
   return (
-    <ThemeProvider theme={agencyTheme}>
+    <ThemeProvider theme={foodDeliveryTheme}>
       <Fragment>
-        {/* Start agency head section */}
         <Head>
-          <title>Agency | A react next landing page</title>
-          <meta name="theme-color" content="#10ac84" />
+          <title>Foodey</title>
           <meta name="Description" content="React next landing page" />
+          <meta name="theme-color" content="#fff2d9" />
           {/* Load google fonts */}
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600&display=swap"
             rel="stylesheet"
           />
         </Head>
         <ResetCSS />
         <GlobalStyle />
-        {/* End of agency head section */}
-        {/* Start agency wrapper section */}
-        <AgencyWrapper>
+        <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
               <Navbar />
             </DrawerProvider>
           </Sticky>
-          <BannerSection />
-          <FeatureSection />
-          <AboutUsSection />
-          <WorkHistory />
-          <BlogSection />
-          <QualitySection />
-          <VideoSection />
-          <TestimonialSection />
-          <TeamSection />
-          <FaqSection />
-          <NewsletterSection />
+          <Banner />
+          <AvailableRestaurants />
+          <PopularCategory />
+          <HowWorks />
+          <ProductDelivery />
+          <QualityFeatures />
+          {/* <Clients /> */}
+          {/* <Testimonials /> */}
+          <DownloadApp />
+          <Gallery />
+          <CallToAction />
           <Footer />
-        </AgencyWrapper>
-        {/* End of agency wrapper section */}
+        </ContentWrapper>
       </Fragment>
     </ThemeProvider>
   );
 };
-export default Main;
+export default FoodDelivery;

@@ -1,16 +1,17 @@
-import React from 'react';
-import Link from 'next/link';
-import Container from 'common/components/UI/Container';
-import Text from 'common/components/Text';
-import Image from 'common/components/Image';
-import Box from 'common/components/Box';
-import Logo from 'common/components/UIElements/Logo';
-import FooterWrapper from './footer.style';
+import React from "react";
+import Link from "next/link";
+import Container from "common/components/UI/Container";
+import Text from "common/components/Text";
+import Image from "common/components/Image";
+import Box from "common/components/Box";
+import Logo from "common/components/UIElements/Logo";
+import FooterWrapper from "./footer.style";
 
-import LogoImage from 'common/assets/image/foodDelivery/logo-dark.png';
-import facebookIcon from 'common/assets/image/foodDelivery/footer-fb.svg';
-import twitterIcon from 'common/assets/image/foodDelivery/footer-twitter.svg';
-import dribbleIcon from 'common/assets/image/foodDelivery/footer-dribbble.svg';
+import LogoImage from "common/assets/image/foodDelivery/logo-dark.png";
+import facebookIcon from "common/assets/image/foodDelivery/footer-fb.svg";
+import twitterIcon from "common/assets/image/foodDelivery/footer-twitter.svg";
+import instagramIcon from "common/assets/image/foodDelivery/footer-instagram.svg";
+import dribbleIcon from "common/assets/image/foodDelivery/footer-dribbble.svg";
 
 const Footer = () => {
   return (
@@ -27,9 +28,9 @@ const Footer = () => {
             <Text
               as="span"
               content={`Copyright © ${new Date().getFullYear()}`}
-            />{' '}
+            />{" "}
             <Link href="#">
-              <a>RedQ, Inc.</a>
+              <a>Indigo Infrastructures Private Limited</a>
             </Link>
           </Box>
         </Box>
@@ -59,11 +60,11 @@ const Footer = () => {
               <Image src={twitterIcon?.src} alt="twitter" />
             </a>
           </Link>
-          <Link href="#">
+          {/* <Link href="#">
             <a>
-              <Image src={dribbleIcon?.src} alt="dribbble" />
+              <Image src={instagramIcon?.src} alt="dribble" />
             </a>
-          </Link>
+          </Link> */}
         </Box>
       </Container>
     </FooterWrapper>
